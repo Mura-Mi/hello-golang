@@ -21,4 +21,7 @@ func main() {
 
   a, b := swap("Hello", "World");
   fmt.Println(a, b);
+
+  var first, second, third = "Java", "Ruby", "Go"
+  fmt.Println(first, second, third);
 }
