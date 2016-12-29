@@ -15,6 +15,14 @@ func addAndMultiplied(a, b int) (added, multiplied int) {
   return
 }
 
+func pow(x, n, lim float64) float64 {
+  if v := math.Pow(x, n); v < lim {
+    return v
+  }
+
+  return lim;
+}
+
 func main() {
   fmt.Println("My favorite number is", math.Pi);
   fmt.Println(addAndMultiplied(2, 4));
@@ -24,4 +32,6 @@ func main() {
 
   first, second, third := "Java", "Ruby", "Go"
   fmt.Println(first, second, third);
+
+  fmt.Println(pow(3, 3, 20));
 }
