@@ -5,17 +5,19 @@ import (
   "math"
 )
 
-func add(x, y int) int {
-  return x + y;
-}
-
 func swap(a, b string) (string, string) {
   return b, a;
 }
 
+func addAndMultiplied(a, b int) (added, multiplied int) {
+  added = a + b
+  multiplied = a * b
+  return
+}
+
 func main() {
   fmt.Println("My favorite number is", math.Pi);
-  fmt.Println("2 + 4 = ", add(2, 4));
+  fmt.Println(addAndMultiplied(2, 4));
 
   a, b := swap("Hello", "World");
   fmt.Println(a, b);
