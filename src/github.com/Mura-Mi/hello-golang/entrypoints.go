@@ -33,5 +33,9 @@ func main() {
   first, second, third := "Java", "Ruby", "Go"
   fmt.Println(first, second, third);
 
+  for i := 10; i > 0; i-- {
+    defer fmt.Println("defer: ", i);
+  }
+
   fmt.Println(pow(3, 3, 20));
 }
