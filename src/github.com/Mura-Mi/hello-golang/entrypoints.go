@@ -25,10 +25,13 @@ func pow(x, n, lim float64) float64 {
 
 func main() {
   fmt.Println("My favorite number is", math.Pi);
-  fmt.Println(addAndMultiplied(2, 4));
 
-  a, b := swap("Hello", "World");
-  fmt.Println(a, b);
+  av := 2;
+  bv := 4;
+  a := &av;
+  b := &bv;
+
+  fmt.Println(addAndMultiplied(*a, *b));
 
   first, second, third := "Java", "Ruby", "Go"
   fmt.Println(first, second, third);
